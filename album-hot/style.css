@@ -1,0 +1,40 @@
+.container{
+	display: flex;
+}
+
+.hot-album{
+	font-family: sans-serif;
+	margin-bottom: 10px;
+	height: 128px;
+	width: 128px;
+	color: #FFF;
+	font-size: 40px;
+	background-size: cover;
+	background-position: center;
+	background-image: url(https://loremflickr.com/320/240);
+}
+.hot-album .overlay{
+	height: 100%;
+	display: flex;
+	align-items: center; /*căn chiều dọc ra giữa*/
+	justify-content: center; /*căn chiều ngang ra giữa*/
+	background: linear-gradient(0deg, rgba(0,0,0,0.7990546560421043) 0%, rgba(232,221,221,0) 100%);
+	/*có 3 cách để ẩn overlay đi */
+	/*display: none;
+	visibilily:hidden
+	*/ 
+	opacity:0; 
+}
+/*khi mà trỏ chuột vào hot-ablum  thì sẽ hiện overlay lên*/
+.hot-album:hover .overlay{
+	opacity: 1;
+}
+.name-music{
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+	text-align: center;
+}
+.name-music:hover{
+	color: #cb9bd6;
+}
