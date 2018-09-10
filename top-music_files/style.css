@@ -1,0 +1,54 @@
+body {
+  font-family: arial, san-serif
+}
+.container{
+  width: 500px;
+  height: 500px;
+}
+.top-music {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 13px 0;
+  border-bottom: 1px solid #EEE;
+  box-sizing: border-box;/* không làm to ô do padding*/
+}
+.img{
+  width: auto;
+  height: 200px;
+  background-image: url(https://loremflickr.com/320/240);
+  color: #FFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+.overlay{
+  align-items: flex-end;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(236,236,236,0) 100%);
+}
+
+.top-music .number {
+  font-size: 20px;
+  padding: 0 8px;
+}
+
+.top-music .info-music {
+  flex-grow: 1;
+}
+
+.top-music .name-music {
+  margin-bottom: 5px;
+}
+
+.top-music .name-singer {
+  font-size: 13px;
+  color: #aca8a8;
+}
+
+.top-music .view-count {
+  font-size: 14px;
+  color: #aca8a8;
+}
